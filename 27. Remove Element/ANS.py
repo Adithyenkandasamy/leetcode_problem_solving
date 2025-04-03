@@ -1,8 +1,8 @@
-val = 3
-nums = [2,3,2]
-nums.sort()
-# print(nums)
-c_o_v = nums.count(val)
-for i in range(c_o_v):
-    nums.remove(val)
-print(nums,c_o_v)    
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        k = 0
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[k] = nums[i]
+                k += 1
+        return k
