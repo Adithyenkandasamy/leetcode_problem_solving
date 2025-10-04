@@ -4,8 +4,6 @@ class Solution:
         while numBottles>=numExchange:
             numBottles -= numExchange
             numBottles += 1
-
-            print(numBottles)
             total+=1
         return total
 
